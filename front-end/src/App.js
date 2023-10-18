@@ -8,13 +8,13 @@ function App() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(
-        `https://web-scrapping-ecommerce75.vercel.app/api/products/${searchTerm}`
-      );
-
       // const response = await axios.get(
-      //   `http://localhost:3001/api/products/${searchTerm}`
+      //   `https://webscrapping-ecommerce-75.onrender.com/api/products/${searchTerm}`
       // );
+
+      const response = await axios.get(
+        `http://localhost:3001/api/products/${searchTerm}`
+      );
 
       setProducts(response.data);
     } catch (error) {
@@ -47,7 +47,7 @@ function App() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <div className="d-flex ms-auto">
+            <form className="d-flex ms-auto">
               <input
                 className="form-control me-2"
                 type="search"
@@ -63,7 +63,7 @@ function App() {
               >
                 Search
               </button>
-            </div>
+            </form>
 
             <a href="#" className="btn btn-outline-primary ms-3">
               <svg
