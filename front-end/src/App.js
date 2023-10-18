@@ -9,7 +9,7 @@ function App() {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `https://webscrapping-ecommerce-75.onrender.com/api/products/${searchTerm}`
+        `https://web-scrapping-ecommerce75.vercel.app/api/products/${searchTerm}`
       );
 
       // const response = await axios.get(
