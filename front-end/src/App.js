@@ -18,7 +18,7 @@ function App() {
 
       setProducts(response.data);
     } catch (error) {
-      console.log(error);
+      console.error("Error while fetching data:", error);
     }
   };
 
@@ -67,7 +67,6 @@ function App() {
 
             <a href="#" className="btn btn-outline-primary ms-3">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
@@ -90,7 +89,6 @@ function App() {
                 <p className="card-text rating">
                   {product.rating}
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
