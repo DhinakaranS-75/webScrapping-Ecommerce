@@ -8,13 +8,13 @@ function App() {
 
   const handleSearch = async () => {
     try {
-      // const response = await axios.get(
-      //   `https://webscrapping-ecommerce-backend.onrender.com/api/products/${searchTerm}`
-      // );
-
       const response = await axios.get(
-        `http://localhost:3001/api/products/${searchTerm}`
+        `https://webscrapping-ecommerce-backend.onrender.com/api/products/${searchTerm}`
       );
+
+      // const response = await axios.get(
+      //   `http://localhost:3001/api/products/${searchTerm}`
+      // );
 
       setProducts(response.data);
     } catch (error) {
