@@ -47,7 +47,7 @@ function App() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <form className="d-flex ms-auto">
+            <div className="d-flex ms-auto">
               <input
                 className="form-control me-2"
                 type="search"
@@ -63,7 +63,7 @@ function App() {
               >
                 Search
               </button>
-            </form>
+            </div>
 
             <a href="#" className="btn btn-outline-primary ms-3">
               <svg
