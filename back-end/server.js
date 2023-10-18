@@ -13,12 +13,7 @@ app.get("/api/products/:searchTerm", async (req, res) => {
     const searchTerm = req.params.searchTerm;
     const url = `https://www.flipkart.com/search?q=${searchTerm}`;
 
-    const response = await axios.get(url, {
-      withCredentials: true,
-      headers: {
-          'Access-Control-Allow-Origin': '*', 
-          'Content-Type': 'application/json'
-      }});
+    const response = await axios.get(url);
     const $ = cheerio.load(response.data);
 
     const products = [];
