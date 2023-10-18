@@ -9,7 +9,7 @@ function App() {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `https://webscrapping-ecommerce-backend.onrender.com/api/products/${searchTerm}`
+        `https://webscrapping-ecommerce-75.onrender.com/api/products/${searchTerm}`
       );
 
       // const response = await axios.get(
